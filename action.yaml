@@ -1,4 +1,4 @@
-name: Get Current Pull Request
+name: Get Current PR
 description: Get Current Pull Request URL & Title
 author: everpcpc
 
