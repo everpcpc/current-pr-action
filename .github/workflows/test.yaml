@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: get pr
+      - name: get current pr
         uses: ./
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
