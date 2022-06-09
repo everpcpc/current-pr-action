@@ -5,11 +5,14 @@ on:
     branches: [main]
 
 jobs:
-  comment:
+  pr:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: get current pr
+        id: this-pr
         uses: ./
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: output
+        run: echo ${{ steps.this-pr.outputs.url }}
