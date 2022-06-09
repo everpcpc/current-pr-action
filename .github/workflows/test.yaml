@@ -15,4 +15,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: output
-        run: echo ${{ steps.this-pr.outputs.url }}
+        run: |
+          echo ${{ steps.this-pr.outputs.title }}
+          echo ${{ steps.this-pr.outputs.url }}
