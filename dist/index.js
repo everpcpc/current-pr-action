@@ -8951,6 +8951,7 @@ async function run() {
         })
         core.setOutput('url', pr.data.html_url);
         core.setOutput('title', pr.data.title);
+        core.setOutput('author', pr.data.user.login);
     } catch (error) {
         core.setFailed(error.message);
     }

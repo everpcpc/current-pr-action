@@ -18,3 +18,4 @@ jobs:
         run: |
           echo ${{ steps.this-pr.outputs.title }}
           echo ${{ steps.this-pr.outputs.url }}
+          echo ${{ steps.this-pr.outputs.author }}
