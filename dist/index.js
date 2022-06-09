@@ -8949,7 +8949,7 @@ async function run() {
             repo: context.repo.repo,
             pull_number: prID,
         })
-        core.setOutput('url', pr.url);
+        core.setOutput('url', pr.data.html_url);
         core.setOutput('title', pr.data.title);
     } catch (error) {
         core.setFailed(error.message);
