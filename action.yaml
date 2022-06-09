@@ -10,6 +10,8 @@ inputs:
 outputs:
   url:
     description: HTML url for pull request
+  number:
+    description: Pull request number
   title:
     description: Pull request title
   author:

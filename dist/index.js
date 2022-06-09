@@ -8950,6 +8950,7 @@ async function run() {
             pull_number: prID,
         })
         core.setOutput('url', pr.data.html_url);
+        core.setOutput('number', prID);
         core.setOutput('title', pr.data.title);
         core.setOutput('author', pr.data.user.login);
     } catch (error) {
