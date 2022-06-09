@@ -7,6 +7,14 @@ inputs:
     description: GitHub Token
     required: true
 
+outputs:
+  url:
+    description: HTML url for pull request
+  title:
+    description: Pull request title
+  author:
+    description: Author name for pull request
+
 runs:
   using: node16
   main: dist/index.js
