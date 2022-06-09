@@ -1,0 +1,16 @@
+name: Get Current Pull Request
+description: Get Current Pull Request URL & Title
+author: everpcpc
+
+inputs:
+  token:
+    description: GitHub Token
+    required: true
+
+runs:
+  using: node16
+  main: dist/index.js
+
+branding:
+  icon: message-circle
+  color: green
